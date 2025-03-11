@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Impact Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/api.js"></script>  <!-- Handles API fetching -->
+    <script defer src="js/charts.js"></script>  <!-- Handles charts -->
+</head>
+<body>
+    <header>
+        <h1>Welcome On The Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Climate Predictions</h2>
+            <button id="fetchData">Load Predictions</button>
+            <table id="predictionTable">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Temperature (°C)</th>
+                        <th>Rainfall (mm)</th>
+                        <th>Impact Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Visualization</h2>
+            <canvas id="climateChart"></canvas>  <!-- Chart.js Graph -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Climate Impact Analysis by John Brian. All rights reserved.</p>
+    </footer>
+</body>
+</html>
