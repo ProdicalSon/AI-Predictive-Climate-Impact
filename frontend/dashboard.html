@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Impact Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/api.js"></script>  <!-- Handles API fetching -->
-    <script defer src="js/charts.js"></script>  <!-- Handles charts -->
+    <script defer src="js/api.js"></script>
+    <!-- Handles API fetching -->
+    <script defer src="js/charts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+
+    <!-- Handles charts -->
 </head>
+
 <body>
     <header>
         <h1>Welcome On The Dashboard</h1>
@@ -41,12 +47,20 @@
 
         <section>
             <h2>Visualization</h2>
-            <canvas id="climateChart"></canvas>  <!-- Chart.js Graph -->
+            <canvas id="climateChart"></canvas>
+            <!-- Chart.js Graph -->
         </section>
+
+        <h2>Climate Prediction Charts</h2>
+        <canvas id="climateChart"></canvas>
+
+
     </main>
 
     <footer>
         <p>© 2025 Climate Impact Analysis by John Brian. All rights reserved.</p>
     </footer>
+    <script src="js/charts.js"></script>
 </body>
+
 </html>

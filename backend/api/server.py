@@ -1,6 +1,12 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+
 from flask import Flask
 from flask_cors import CORS
-from api.routes import api_routes
+from routes import api_routes
+
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend calls

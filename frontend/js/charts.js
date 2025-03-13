@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", async() => {
     const ctx = document.getElementById("climateChart").getContext("2d");
 
     try {
-        const response = await fetch("http://localhost:5000/api/predictions");
+        const response = await fetch("http://localhost:5000/api/predictions"); // Ensure API is running
         const data = await response.json();
 
         const locations = data.map(item => item.location);
@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             options: {
                 responsive: true,
                 plugins: {
-                    legend: {
-                        display: true
-                    }
+                    legend: { display: true }
                 }
             }
         });

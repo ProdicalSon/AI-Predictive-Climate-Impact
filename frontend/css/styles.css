@@ -1,4 +1,5 @@
 /* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +7,18 @@
     font-family: Arial, sans-serif;
 }
 
+
 /* Body Styling */
+
 body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
 }
 
+
 /* Header Section */
+
 header {
     background: linear-gradient(to right, #002147, #0057b7);
     color: white;
@@ -24,7 +29,9 @@ header h1 {
     margin-bottom: 10px;
 }
 
+
 /* Navigation Bar */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -47,7 +54,9 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
+
 /* Main Section */
+
 main {
     margin: 40px auto;
     padding: 20px;
@@ -67,7 +76,9 @@ section p {
     line-height: 1.6;
 }
 
+
 /* Footer */
+
 footer {
     margin-top: 30px;
     padding: 15px;
@@ -75,14 +86,18 @@ footer {
     color: white;
     font-size: 14px;
 }
+
+
 /* Dashboard Table */
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
@@ -97,7 +112,9 @@ tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+
 /* Fetch Button */
+
 #fetchData {
     padding: 10px 20px;
     background: #002147;
@@ -110,7 +127,10 @@ tbody tr:nth-child(even) {
 #fetchData:hover {
     background: #ffcc00;
 }
+
+
 /* About Page */
+
 section {
     text-align: left;
     margin: 20px auto;
@@ -135,11 +155,16 @@ section ul li {
     font-size: 16px;
 }
 
+
 /* Navigation Link Active State */
+
 nav ul li a.active {
     color: #ffcc00;
 }
+
+
 /* Team Section */
+
 .team-container {
     display: flex;
     justify-content: center;
@@ -163,7 +188,9 @@ nav ul li a.active {
     color: #002147;
 }
 
+
 /* Contact Form */
+
 #contactForm {
     display: flex;
     flex-direction: column;
@@ -201,4 +228,10 @@ nav ul li a.active {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important;
+    display: block !important;
 }

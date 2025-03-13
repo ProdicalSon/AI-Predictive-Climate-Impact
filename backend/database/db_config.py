@@ -7,8 +7,11 @@ load_dotenv()
 
 def get_db_connection():
     return mysql.connector.connect(
-        host=os.getenv("DB_HOST"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        database=os.getenv("DB_NAME")
-    )
+    host="127.0.0.1",  # Force TCP/IP instead of named pipes
+    user="root",
+    password="1457Debora",
+    database="your_database",
+    use_pure=True,
+    unix_socket=None
+)
+
