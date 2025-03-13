@@ -9,9 +9,20 @@
     <script defer src="js/api.js"></script>
     <!-- Handles API fetching -->
     <script defer src="js/charts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
-
     <!-- Handles charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            margin-bottom: 40px;
+            /* Adds space between charts */
+        }
+        
+        #impactChart {
+            max-width: 300px;
+            /* Makes the pie chart smaller */
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,6 +41,13 @@
         <section>
             <h2>Climate Predictions</h2>
             <button id="fetchData">Load Predictions</button>
+
+            <!-- Dropdown for filtering -->
+            <label for="citySelector">Select a City:</label>
+            <select id="citySelector">
+                <option value="all">All Cities</option>
+            </select>
+
             <table id="predictionTable">
                 <thead>
                     <tr>
@@ -46,21 +64,29 @@
         </section>
 
         <section>
-            <h2>Visualization</h2>
-            <canvas id="climateChart"></canvas>
-            <!-- Chart.js Graph -->
+            <h2>Climate Prediction Charts</h2>
+
+            <div class="chart-container">
+                <h3>Temperature & Rainfall Comparison</h3>
+                <canvas id="climateChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h3>Temperature Trends Over Time</h3>
+                <canvas id="trendChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h3>Impact Levels Distribution</h3>
+                <canvas id="impactChart"></canvas>
+            </div>
         </section>
-
-        <h2>Climate Prediction Charts</h2>
-        <canvas id="climateChart"></canvas>
-
-
     </main>
 
     <footer>
         <p>© 2025 Climate Impact Analysis by John Brian. All rights reserved.</p>
     </footer>
-    <script src="js/charts.js"></script>
+
 </body>
 
 </html>

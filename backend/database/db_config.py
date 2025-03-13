@@ -10,7 +10,7 @@ def get_db_connection():
     host="127.0.0.1",  # Force TCP/IP instead of named pipes
     user="root",
     password="1457Debora",
-    database="your_database",
+    database="climate_db",
     use_pure=True,
     unix_socket=None
 )
